@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me</title>
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body class="dark-mode">
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="games.html">Games</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <div class="social-media">
+        <a href="https://www.instagram.com/sucheendranadh?igsh=MXZmODJnbHk1YjJiNA==" target="_blank">
+            <img src="instalogo.jpg" alt="Instagram" />
+        </a>
+        <a href="https://youtube.com/@esucheendranadh3676?si=Ey3C3Hag7KhuytLc" target="_blank">
+            <img src="ytlogo.png" alt="YouTube" />
+        </a>
+        <a href="https://www.fiverr.com/s/gDjWAmA" target="_blank">
+            <img src="fivverlogo.png" alt="Fiverr" />
+        </a>
+        <a href="https://github.com/sucheendranadh" target="_blank">
+            <img src="github.png" alt="github" />
+        </a>
+    </div>
+
+    <h2>Contact Me</h2>
+    <div class="contact-form">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+        <button onclick="sendEmail()">Send Email</button>
+    </div>
+    
+    <div class="contact-info">
+        <p>Email: <a href="mailto:esucheendranadh@gmail.com" style="color: skyblue;">esucheendranadh@gmail.com</a></p>
+        <p>Instagram: <a href="https://www.instagram.com/sucheendranadh" target="_blank" style="color: skyblue;">@sucheendranadh</a></p>
+    </div>
+
+    <script>
+        function sendEmail() {
+            let name = document.getElementById('name').value.trim();
+            let message = document.getElementById('message').value.trim();
+
+            if (!name || !message) {
+                alert("Please fill out all fields before sending the email.");
+                return;
+            }
+
+            let subject = encodeURIComponent(`Contact from ${name}`);
+            let body = encodeURIComponent(`Message:\n${message}`);
+
+            let gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=esucheendranadh@gmail.com&su=${subject}&body=${body}`;
+
+            window.open(gmailLink, '_blank');
+        }
+    </script>
+</body>
+</html>

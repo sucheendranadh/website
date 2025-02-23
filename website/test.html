@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sucheendranadh</title>
+  <!-- Link to the external stylesheet -->
+  <link rel="stylesheet" href="test.css">
+</head>
+<body class="dark-mode">
+  <!-- Navbar Section -->
+  <div class="navbar">
+      <a href="#home">Home</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+  </div>
+
+  <!-- Social Media Links at the top (if desired) -->
+  <div class="social-media">
+      <a href="https://www.instagram.com/your_username" target="_blank">Instagram</a>
+  </div>
+  
+  <!-- Contact button leading to another page -->
+  <!-- <a href="contact.html">
+      <button class="btn">Contact</button>
+  </a> -->
+  <a href="contact.html">
+    <button class="neon">contact</button>
+   </a>
+  
+  <!-- Page Heading -->
+  <h1>Sucheendranadh E</h1>
+  
+  <!-- Introduction Section -->
+  <div class="introduction">
+      <p>Hello! I'm Sucheendranadh E, a passionate fitness enthusiast and a dedicated programmer.</p>
+      <p>I love helping people achieve their fitness goals, so feel free to reach out if you need workout plans.</p>
+      <p>My expertise lies in game development and chatbot development, where I create interactive and intelligent solutions.</p>
+      <p>Explore my projects and achievements, and don't hesitate to connect with me for collaborations or inquiries.</p>
+  </div>
+  
+  <!-- Main Content Container -->
+  <div class="container">
+      <div class="box" onclick="navigateTo('fitness.html')">
+          <img src="arms.jpg" alt="Fitness" />
+          <span>Fitness</span>
+      </div>
+      <div class="box" onclick="navigateTo('chatbot.html')">
+          <img src="chatbot.jpg" alt="Chatbot" />
+          <span>Chatbot</span>
+      </div>
+      <div class="box">
+          <img src="gamedev.jpg" alt="Game Development" />
+          <span>Game Development</span>
+      </div>
+      <div class="box" onclick="navigateTo('flutterapp.html')">
+          <img src="flutter1.jpeg" alt="flutter app development" />
+          <span>Chatbot</span>
+      </div>
+  </div>
+  
+  <!-- Social Media Icons -->
+  <div class="social-media">
+      <a href="https://www.instagram.com/sucheendranadh?igsh=MXZmODJnbHk1YjJiNA==" target="_blank">
+          <img src="instalogo.jpg" alt="Instagram" />
+      </a>
+      <a href="https://youtube.com/@esucheendranadh3676?si=Ey3C3Hag7KhuytLc" target="_blank">
+          <img src="ytlogo.png" alt="YouTube" />
+      </a>
+      <a href="https://www.fiverr.com/s/gDjWAmA" target="_blank">
+          <img src="fivverlogo.png" alt="Fiverr" />
+      </a>
+  </div>
+  
+  <!-- Dark/Light Mode Toggle (if using) -->
+  <div class="toggle-container">
+      <div id="toggle-switch" class="toggle-switch"></div>
+  </div>
+  
+  <div id="app"></div>
+  
+  
+  <!-- External JS file -->
+  <script src="script.js"></script>
+</body>
+</html>
